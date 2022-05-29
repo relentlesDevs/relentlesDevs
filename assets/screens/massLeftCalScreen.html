@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="./massStyle.css">
+    <script src="./massScript.js" defer></script>
+    <title>massScreen</title>
+    <link rel="icon" type="image/x-icon" href="../vectors/favicon.ico">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="../vectors/logo.png" id="logo" />
+                <p id="logo-text">Autofuse</p>
+            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../../Autofuse.html">Home</a></li>
+                    <li><a href="./optional screens/about.html">About</a></li>
+                    <li><a href="./optional screens/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <form name="myform" action="" method="get">
+        <div class="page">
+            <div class="sections">
+                <div class="section1">
+                    <h1 class="title">CALCULATING MASS OF CHEMICAL LEFT</h1>
+                    <a href="../../Autofuse.html">
+                        <div class="element"></div>
+                    </a>
+                </div>
+                <div class="section2">
+                    <div class="section2Contents">
+                        <div class="section2Sub">
+                            <div class="section2SubIn1">
+                                <h5>Chemical's Name</h5>
+                            </div>
+                            <div class="section2SubIn2">
+                                <form name="form1" action="" method="get">
+                                    <input id="h1Form" class="textarea" type="text" name="nameInput" value="">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="section2Sub">
+
+                            <div class="section2SubIn1">
+                                <h5>Chemical's Initial Mass</h5>
+                            </div>
+                            <div class="section2SubIn2">
+
+                                <input id="h2Form" class="textarea" type="text" name="iniMassInput" value="">
+
+                            </div>
+                        </div>
+
+                        <div class="section2Sub">
+                            <div class="section2SubIn1">
+                                <h5>Timeframe to Check</h5>
+                            </div>
+                            <div class="section2SubIn2">
+
+                                <input id="h3Form" class="textarea" type="text" name="timeInput" value="">
+
+                            </div>
+                        </div>
+
+                        <div class="section2Sub">
+                            <div class="section2SubIn1">
+                                <h5>Chemical's half life</h5>
+                            </div>
+                            <div class="section2SubIn2">
+
+                                <input id="h4Form" class="textarea" type="text" name="hlifeInput" value="">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="buttonTabs">
+                    <a href="./optional screens/guide.html">
+                        <div class="buttonCover">
+                            <h3 class="btnTitle">GUIDE</h3>
+                        </div>
+                    </a>
+
+                    <div id="diffBtn" onclick="clickOne()">
+                        <h3 class=" btnTitle ">CALCULATE</h3>
+                    </div>
+
+                    <a href="../../Autofuse.html">
+                        <div class="buttonCover ">
+                            <h3 class="btnTitle ">CANCEL</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>TIME(days)</th>
+                    <th>MASS LEFT(grammes)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="a1">0</td>
+                    <td id="b1">0</td>
+                </tr>
+                <tr class="active-row">
+                    <td id="a2">0</td>
+                    <td id="b2">0</td>
+                </tr>
+                <tr class="active-row">
+                    <td id="a3">0</td>
+                    <td id="b3">0</td>
+                </tr>
+                <tr>
+                    <td id="a4">0</td>
+                    <td id="b4">0</td>
+                </tr>
+                <tr class="active-row">
+                    <td id="a5">0</td>
+                    <td id="b5">0</td>
+                </tr>
+                <!-- and so on... -->
+            </tbody>
+        </table>
+        </div>
+
+        <div class="footer ">
+            <p>copyright AUTOFUSE</p>
+        </div>
+    </form>
+</body>
+
+</html>

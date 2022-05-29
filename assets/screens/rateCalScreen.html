@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="./rateStyle.css">
+    <script src="./rateScript.js" defer></script>
+    <title>rateScreen</title>
+    <link rel="icon" type="image/x-icon" href="../vectors/favicon.ico">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="brand-title">
+                <img src="../vectors/logo.png" id="logo" />
+                <p id="logo-text">Autofuse</p>
+            </div>
+
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="../../Autofuse.html">Home</a></li>
+                    <li><a href="./optional screens/about.html">About</a></li>
+                    <li><a href="./optional screens/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="page">
+        <div class="sections">
+            <div class="section1">
+                <h1 class="title">CALCULATING RATE DECOMPOSITION</h1>
+                <a href="../../Autofuse.html">
+                    <div class="element"></div>
+                </a>
+            </div>
+            <div class="section2">
+                <div class="section2Contents">
+                    <div class="section2Sub">
+                        <div class="section2SubIn1">
+                            <h5>Chemical's Name</h5>
+                        </div>
+                        <div class="section2SubIn2">
+                            <input id="h1Form" class="textarea" type="text" name="nameInput" value="">
+                        </div>
+                    </div>
+
+
+                    <div class="section2Sub">
+                        <div class="section2SubIn1">
+                            <h5>Timeframe to Check</h5>
+                        </div>
+                        <div class="section2SubIn2">
+                            <input id="h2Form" class="textarea" type="text" name="timeInput" value="">
+                        </div>
+                    </div>
+
+                    <div class="section2Sub">
+                        <div class="section2SubIn1">
+                            <h5>Chemical's half life</h5>
+                        </div>
+                        <div class="section2SubIn2">
+                            <input id="h3Form" class="textarea" type="text" name="hlInput" value="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttonTabs">
+                <a href="./optional screens/guide.html">
+                    <div class="buttonCover">
+                        <h3 class="btnTitle">GUIDE</h3>
+                    </div>
+                </a>
+                <div id="diffBtn" onclick="CalcClicked()">
+                    <h3 class="btnTitle">CALCULATE</h3>
+                </div>
+                <a href="../../Autofuse.html">
+                    <div class="buttonCover">
+                        <h3 class="btnTitle">CANCEL</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <p>copyright AUTOFUSE</p>
+    </div>
+</body>
+
+</html>

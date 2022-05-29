@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* NAVIGATION BAR STYLES*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #ffffff;
+    width: auto;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0%;
+}
+
+.header {
+    background-color: red;
+    height: 20%;
+    width: 100%;
+}
+
+
+/* LOGO STYLES*/
+
+#logo {
+    width: 25px;
+    height: 25px;
+}
+
+#logo-text {
+    font-size: 1.3rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+    border-radius: 5%;
+    transform: scale(1.3);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: .5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.ptTxt {
+    color: #620E9F;
+}
+
+.prPgr {
+    color: #72CFC7;
+}
+
+@media(max-width:500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+/* FOOTER STYLES*/
+
+.footer {
+    background-color: #333;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #555;
+    width: 100%;
+    bottom: 0%;
+    position: relative;
+}
+
+
+/* START OF PAGE STYLES*/
+
+.title {
+    animation-name: stretch2;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    font-size: 0.75rem;
+}
+
+.page {
+    background-color: white;
+    width: 100%;
+    height: 70%;
+    top: 0px;
+    margin-top: 0px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    padding: 10px;
+    animation: pulse 5s infinite;
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #620E9F;
+    }
+    50% {
+        background-color: #333;
+    }
+    100% {
+        background-color: #72CFC7;
+    }
+}
+
+.section1 {
+    width: 99%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: #72CFC7;
+    height: 30%;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px #620E9F solid;
+}
+
+.element {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(.3);
+        background-color: rgba(255, 0, 0, 0);
+        border-radius: 100%;
+    }
+    50% {
+        background-color: #72CFC7;
+    }
+    100% {
+        transform: scale(.5);
+        background-color: #333;
+        border-radius: 100%;
+    }
+}
+
+@keyframes stretch2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1.);
+    }
+}
+
+.section2 {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    color: #72CFC7;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+}
+
+.section2Contents {
+    width: 98%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section2Sub {
+    height: 80%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2%;
+}
+
+.section2SubIn1 {
+    height: 100%;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+    animation: inverse 5s infinite;
+}
+
+.section2SubIn2 {
+    height: 100%;
+    width: 49%;
+    border: .5px #72CFC7 solid;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1%;
+    border-radius: 5%;
+    animation: inverse 5s infinite;
+}
+
+@keyframes inverse {
+    0% {
+        color: #72CFC7;
+        border: #620E9F;
+    }
+    50% {
+        color: #ffffff;
+    }
+    100% {
+        color: #620E9F;
+    }
+}
+
+.buttonTabs {
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+.buttonCover {
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 1px #72CFC7 solid;
+    color: #72CFC7;
+    display: flex;
+}
+
+#diffBtn {
+    background-color: #72CFC7;
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #620E9F;
+    box-shadow: 2px 2px #620E9F;
+}
+
+.btnTitle {
+    font-size: 0.75rem;
+}
+
+.textarea {
+    width: 100%;
+    color: #FFF;
+    background: transparent;
+    border: none;
+    outline: none;
+}
